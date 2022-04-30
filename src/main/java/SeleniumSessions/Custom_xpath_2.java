@@ -14,7 +14,7 @@ public class Custom_xpath_2 {
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("classic.crmpro.com");
+		driver.get("http://classic.crmpro.com");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		//xpath Axes:
 		

@@ -3,12 +3,13 @@ package javainterviewprograms;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class EachCharCountInString {
 
 	public static void main(String[] args) {
-	//	characterCount("Java J2EE Java JSP J2EE");
-		wordCount("JAVA JAVA");
+		characterCount("Java J2EE Java JSP J2EE");
+	//wordCount("Bread Butter and bread");
 
 	}
 	private static void characterCount(String inputString) {
@@ -31,8 +32,9 @@ public class EachCharCountInString {
 		//Printing inputString and charCountMap 
 		
 		System.out.println(inputString + ":" + charCountMap);
+			
+		}
 		
-	}
 	
 	
 	private static void wordCount(String inputString1) {
@@ -40,7 +42,7 @@ public class EachCharCountInString {
 		HashMap<String , Integer> stringCountMap = new HashMap<String , Integer>();
 	    
 	     String[]words= inputString1.split(" ");
-	     System.out.println(Arrays.toString(words));
+	  //   System.out.println(Arrays.toString(words));
 		//3.checking each char of strArray
 		for(String s:words) {
 			if(stringCountMap.containsKey(s)) {
@@ -58,10 +60,10 @@ public class EachCharCountInString {
 	//	System.out.println(inputString1 + ":" + stringCountMap);
 		
 		for(Map.Entry<String, Integer> entry :stringCountMap.entrySet()) {
+			  
 			System.out.println(entry.getKey() + " : " + entry.getValue());
+			
 		}
 		
 	}
-	
-
 }
